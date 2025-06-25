@@ -1,0 +1,22 @@
+<form name="testform" action="https://google.com" method="get">
+    <!-- Your other form fields here -->
+    <input type="text" size="500" name="blackBox" id="blackBox"/>
+    <input type="submit" value="Submit">
+</form>
+ 
+<script language="JavaScript">
+    window.io_install_stm       = false,
+    window.io_install_flash     = false;
+</script>
+ 
+<script language="JavaScript">
+	blackBoxString = '';
+    function io_bb_callback(blackBoxString, isComplete) {
+        if ( isComplete ) {
+            document.getElementById('blackBox').value = encodeURIComponent(blackBoxString)
+        }
+    };
+</script>
+ 
+<!-- 3. Load snare.js. MUST NOT BE SAVED LOCALLY -->
+<script src="file.js"></script>

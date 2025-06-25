@@ -1,0 +1,2 @@
+#This is a python script that will automatically be executed when you come ingame with the bot(also after map changing etc.)
+#With this, you can load your custom python code at the start-up, just paste it here
